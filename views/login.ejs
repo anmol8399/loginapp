@@ -1,0 +1,29 @@
+<% include ..\views\partials\header.ejs %>
+<div class="topnav">
+  <a class="topnavhead " href="/">HOME PAGE</a>
+  <!-- <a href="#news">News</a>
+  <a href="#contact">Contact</a> -->
+	<div class="topnav-right">
+	   <a  class = "active" href="/login">Login</a>
+	   <a href="/register">Signup</a>
+	</div>
+</div>
+
+<div class="container">
+
+	<header class="jumbotron">
+		<h1>Welcome to the login page</h1>
+	</header>
+
+	<div class="row">
+    	<div style="width: 30%; margin: 0 auto;">
+			<form action="/login" method="POST">
+				Username: <input class="form-control" type="text" name="username" placeholder="Username"><br>
+				Password: <input class="form-control" type="password" name="password" placeholder="Password">
+				<button class="btn btn-primary form-control padding ">Login</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<% include ..\views\partials\footer.ejs %>
